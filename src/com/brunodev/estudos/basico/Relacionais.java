@@ -9,8 +9,8 @@ public class Relacionais {
 
         boolean isDezMaiorQueVinte = 10 > 20;
         boolean isDezMenorQueVinte = 10 < 20;
-        boolean isDezIgualADez = 10 == 10;
-        boolean isDezDiferenteDeDez = 10 != 10;
+        boolean isDezIgualADez = 10 == 9; //era ==
+        boolean isDezDiferenteDeDez = 10 != 11; //era !=
         System.out.println("isDezMaiorQueVinte "+ isDezMaiorQueVinte);
         System.out.println("isDezMenorQueVinte "+ isDezMenorQueVinte);
         System.out.println("isDezIgualADez " + isDezIgualADez);
