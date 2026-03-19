@@ -4,7 +4,7 @@ public class CondicionaisIF {
     public static void main(String[] args){
         int idade = 17;
 
-        //só se compara valores booleanos. (Uma das maneiras do codigo ficar mais organizado e limpo dentro da condição dos ifs).
+        //só se compara valores booleanos.
         if(idade <= 17){
             System.out.println("É menor de idade!");
         } 
