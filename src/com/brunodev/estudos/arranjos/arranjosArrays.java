@@ -1,6 +1,6 @@
 package com.brunodev.estudos.arranjos;
 
-public class arranjosArrays {
+public class ArranjosArrays {
     public static void main(String[] args) {
         // int idade está fazendo referencia a um objeto em memoria (new int).
         // todos os tipos primitivos inicializa comm um valor.

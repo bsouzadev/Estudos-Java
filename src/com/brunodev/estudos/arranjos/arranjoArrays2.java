@@ -1,6 +1,6 @@
 package com.brunodev.estudos.arranjos;
 
-public class arranjoArrays2 {
+public class ArranjoArrays2 {
     public static void main(String[] args) {
         int[] idade = new int[] { 1, 3, 4, 1, 3 }; // se pode inicializar assim ou somente com {1,3,1,23};
 
