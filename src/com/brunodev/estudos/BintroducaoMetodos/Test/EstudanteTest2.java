@@ -15,7 +15,7 @@ public class EstudanteTest2 {
         estudante2.idade = 13;
         estudante2.sexo = 'M';
 
-        estudante1.imprime(); //através do this: acessa os dados do objeto que chamou o método
+        estudante1.imprime(); //não precisa de parametro, no metodo tem this, que é o objeto que está executando o método, no caso estudante1.
         estudante2.imprime();
     }
 }
