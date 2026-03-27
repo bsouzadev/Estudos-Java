@@ -1,4 +1,4 @@
-package com.brunodev.estudos.introducaoClasses.faculdade;
+package com.brunodev.estudos.AintroducaoClasses.faculdade;
 
 public class MainCirculo {
     public static void main(String[] args) {
