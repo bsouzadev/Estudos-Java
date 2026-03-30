@@ -1,4 +1,4 @@
-package com.brunodev.estudos.AintroducaoClasses.faculdade;
+package com.brunodev.estudos.exercicios.faculdade;
 
 public class Circulo { //classe, que representa uma entidade do mundo real.
 
