@@ -26,7 +26,7 @@ public class ContaInterface {
 
             else if (menu == 1) {
                 verifica = false;
-                return;
+                break;
             } 
 
             else if (menu == 2) {
