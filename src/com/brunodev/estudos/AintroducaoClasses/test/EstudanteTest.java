@@ -5,10 +5,11 @@ import com.brunodev.estudos.AintroducaoClasses.dominio.Estudante;
 public class EstudanteTest {
     public static void main(String[] args) {
         //criando um objeto...
-        Estudante estudante = new Estudante(); //objeto, variavel de referencia do tipo estudante, que faz referencia a um objeto do tipo estudante (respectivamente).
-        //A classe Estudante define um tipo, e eu uso esse tipo para criar variáveis
+        Estudante estudante = new Estudante(); // Cria um objeto do tipo Estudante (new) e armazena sua referência na variável estudante.
+        //Class Estudante cria um tipo. Estudante estudante cria uma variavel desse tipo, new estudante cria o objeto na memoria. 
+        //A classe define um tipo, que pode ser usado para declarar variáveis, e através do new, criar objetos.
         
-        //colocando valores nos atributos: 
+        // Atribuindo valores aos atributos do objeto
         estudante.idade = 19;
         estudante.nome = "Brunin dev junior";
         estudante.sexo = 'M';
