@@ -12,12 +12,12 @@ public class Conta {
 
     // metodos:
     public void setNumero(int numero) {
-        if (numero < 1 || numero > 4) {
-            System.out.println("Numero invalido!\nPor favor, digite um numero entre 1 e 4.");
+        if (numero >= 1) {
+            this.numero = numero;
             return;
         }
 
-        this.numero = numero;
+        System.out.println("Numero invalido!\nPor favor, digite um numero valido!");
     }
 
     public int getNumero() {
@@ -34,7 +34,7 @@ public class Conta {
 
     //
     public void depositaDinheiro(double x) {
-        if (x >= 0) {
+        if (x > 0) {
             this.saldo += x;
             System.out.println("O valor de " + x + "$ foi adicionado em sua conta!");
             return;

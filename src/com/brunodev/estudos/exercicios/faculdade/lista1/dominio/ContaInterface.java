@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class ContaInterface {
 
     private boolean verifica = true;
+    private int menu;
 
     // metodo:
     public void recebeConta(Conta conta) {
@@ -17,20 +18,30 @@ public class ContaInterface {
             System.out.println("Digite 3 para sacar um valor: ");
             System.out.println("Digite 4 para conferir o seu saldo: ");
             System.out.println("-------------------------");
-            conta.setNumero(sc.nextInt());
+            menu = sc.nextInt();
 
-            if (conta.getNumero() == 1) {
+            if (menu > 4 || menu < 1) {
+                System.out.println("Digite um numero valido entre 1 e 4!");
+            }
+
+            else if (menu == 1) {
                 verifica = false;
                 return;
-            } else if (conta.getNumero() == 2) {
+            } 
+
+            else if (menu == 2) {
                 System.out.println("Digite o valor para depositar: ");
                 double valor = sc.nextDouble();
                 conta.depositaDinheiro(valor);
-            } else if (conta.getNumero() == 3) {
+            }
+
+            else if (menu == 3) {
                 System.out.println("Digite o valor para sacar: ");
                 double sacar = sc.nextDouble();
                 conta.sacarDinheiro(sacar);
-            } else if (conta.getNumero() == 4) {
+            }
+             
+            else if (menu == 4) {
                 conta.conferirSaldo();
             }
         }
