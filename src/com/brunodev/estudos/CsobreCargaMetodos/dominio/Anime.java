@@ -1,6 +1,6 @@
 package com.brunodev.estudos.CsobreCargaMetodos.dominio;
 
-//sobrecarga de metodos: é ter o metodo com o mesmo nome e o tipo/quantidade dos parametros são diferentes.
+//Sobrecarga de métodos: mesmo nome + parâmetros diferentes (tipo, quantidade ou ordem). O tipo de retorno/modificador de acesso não importa.
 //sobrecarga melhora a escala
 public class Anime {
     private String tipo;
@@ -8,25 +8,25 @@ public class Anime {
     private String genero;
     private String nome;
 
-
-    public void init(String tipo, String nome, int episodios){
+    public void init(String tipo, String nome, int episodios) {
         this.tipo = tipo;
         this.nome = nome;
         this.episodios = episodios;
     }
 
-    public void init(String tipo, String nome, int episodios, String genero){
-        this.init(tipo, nome, episodios);
+    public void init(String tipo, String nome, int episodios, String genero) {
+        this.init(tipo, nome, episodios); //esse this serve para: Chamar o OUTRO método init desse mesmo objeto.
         this.genero = genero;
     }
 
-    public void imprime(){
+    public void imprime() {
         System.out.println(this.tipo);
         System.out.println(this.episodios);
         System.out.println(this.genero);
         System.out.println(this.nome);
     }
 
+    // setter = definir (atribuir) um valor ao atributo
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
@@ -35,29 +35,29 @@ public class Anime {
         this.episodios = episodios;
     }
 
-    public void setGenero(String genero){
+    public void setGenero(String genero) {
         this.genero = genero;
     }
 
-    public void setNome(String nome){
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
-    //
-    public String getNome(){
-        return nome;
+    // getter = retornar (pegar) o valor do atributo
+    public String getNome() {
+        return this.nome;
     }
 
-    public String getGenero(){
-        return genero;
+    public String getGenero() {
+        return this.genero;
     }
-    
+
     public String getTipo() {
-        return tipo;
+        return this.tipo;
     }
 
     public int getEpisodios() {
-        return episodios;
+        return this.episodios;
     }
 
 }
