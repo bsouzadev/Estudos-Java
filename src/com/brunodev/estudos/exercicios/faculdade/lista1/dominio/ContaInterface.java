@@ -2,47 +2,30 @@ package com.brunodev.estudos.exercicios.faculdade.lista1.dominio;
 
 import java.util.Scanner;
 
-public class ContaInterface {
+public class Containterface {
+    private int opcaoMenu;
 
-    private boolean verifica = true;
-    private int menu;
-
-    // metodo:
-    public void recebeConta(Conta conta) {
+    public void menu(Conta conta){
         Scanner sc = new Scanner(System.in);
+        while (true) {
+            System.out.println("========== MENU ==========");
+            System.out.println("Digite 1 para sair do menu");
+            System.out.println("Digite 2 para depositar um valor");
+            System.out.println("Digite 3 para sacar um valor");
+            System.out.println("Digite 4 para conferir um saldo");
+            System.out.println("===========================");
+            opcaoMenu = sc.nextInt();
 
-        while (verifica) {
-            System.out.println("----------MENU----------");
-            System.out.println("Digite 1 para sair do menu: ");
-            System.out.println("Digite 2 para depositar um valor em sua conta: ");
-            System.out.println("Digite 3 para sacar um valor: ");
-            System.out.println("Digite 4 para conferir o seu saldo: ");
-            System.out.println("-------------------------");
-            menu = sc.nextInt();
-
-            if (menu > 4 || menu < 1) {
-                System.out.println("Digite um numero valido entre 1 e 4!");
-            }
-
-            else if (menu == 1) {
-                verifica = false;
+            if(opcaoMenu == 1){
                 break;
-            } 
-
-            else if (menu == 2) {
-                System.out.println("Digite o valor para depositar: ");
-                double valor = sc.nextDouble();
-                conta.depositaDinheiro(valor);
-            }
-
-            else if (menu == 3) {
-                System.out.println("Digite o valor para sacar: ");
-                double sacar = sc.nextDouble();
-                conta.sacarDinheiro(sacar);
-            }
-             
-            else if (menu == 4) {
-                conta.conferirSaldo();
+            } else if(opcaoMenu == 2){
+                System.out.println("Digite um valor para fazer um deposito:");
+                conta.deposito(sc.nextDouble());
+            } else if(opcaoMenu == 3){
+                System.out.println("Digite o valor que voce quer sacar:");
+                conta.sacar(sc.nextDouble());
+            } else if (opcaoMenu == 4){
+                conta.conferirSaldoo();                
             }
         }
 

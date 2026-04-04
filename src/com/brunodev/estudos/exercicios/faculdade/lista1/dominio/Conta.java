@@ -1,62 +1,36 @@
 package com.brunodev.estudos.exercicios.faculdade.lista1.dominio;
 
 public class Conta {
-    // atributos:
     private int numero;
     private double saldo;
 
     public Conta() {
-        this.numero = 0;
-        this.saldo = 0.0;
+        numero = 0;
+        saldo = 0.0;
     }
 
     // metodos:
-    public void setNumero(int numero) {
-        if (numero >= 1) {
-            this.numero = numero;
+    public void deposito(double saldo) {
+        if (saldo > 0) {
+            this.saldo += saldo;
+            System.out.println("O deposito no valor de " + saldo + "$ foi efetuado com sucesso!");
             return;
         }
 
-        System.out.println("Numero invalido!\nPor favor, digite um numero valido!");
+        System.out.println("Insira um valor valido para deposito!");
     }
 
-    public int getNumero() {
-        return this.numero;
-    }
-
-    public void setSaldo(double saldo) {
-        this.saldo = saldo;
-    }
-
-    public double getSaldo() {
-        return this.saldo;
-    }
-
-    //
-    public void depositaDinheiro(double x) {
-        if (x > 0) {
-            this.saldo += x;
-            System.out.println("O valor de " + x + "$ foi adicionado em sua conta!");
+    public void sacar(double saldo) {
+        if(saldo <=0 || saldo > this.saldo){
+            System.out.println("Insira um valor valido para sacar!");
             return;
         }
-
-        System.out.println("Não é possivel depositar esse valor.\nPor favor, digite um valor valido!");
-
+        
+        System.out.println("Voce sacou " + saldo + "$");
+        this.saldo -= saldo;
     }
 
-    public void sacarDinheiro(double x) {
-        if (x > saldo) {
-            System.out.println("Saldo insuficiente!");
-            return;
-        }
-
-        this.saldo -= x;
-        System.out.println("Voce sacou " + x + "$ de sua conta!");
-
+    public void conferirSaldoo() {
+        System.out.println("O seu saldo atual é de: " + this.saldo + "$");
     }
-
-    public void conferirSaldo() {
-        System.out.println("O saldo de sua conta é de: " + getSaldo() + "$");
-    }
-
 }
