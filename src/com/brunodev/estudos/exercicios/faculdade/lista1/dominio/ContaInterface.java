@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Containterface {
     private int opcaoMenu;
+    private BancoInterface bi;
 
     public void menu(Conta conta){
         Scanner sc = new Scanner(System.in);
@@ -17,7 +18,8 @@ public class Containterface {
             opcaoMenu = sc.nextInt();
 
             if(opcaoMenu == 1){
-                break;
+                bi = new BancoInterface();
+                bi.menu();
             } else if(opcaoMenu == 2){
                 System.out.println("Digite um valor para fazer um deposito:");
                 conta.deposito(sc.nextDouble());
@@ -29,6 +31,6 @@ public class Containterface {
             }
         }
 
-        sc.close();
+        //sc.close();
     }
 }

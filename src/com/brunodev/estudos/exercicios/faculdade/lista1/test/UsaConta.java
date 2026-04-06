@@ -1,13 +1,13 @@
 package com.brunodev.estudos.exercicios.faculdade.lista1.test;
 
-import com.brunodev.estudos.exercicios.faculdade.lista1.dominio.Conta;
-import com.brunodev.estudos.exercicios.faculdade.lista1.dominio.Containterface;
+import com.brunodev.estudos.exercicios.faculdade.lista1.dominio.Banco;
+import com.brunodev.estudos.exercicios.faculdade.lista1.dominio.BancoInterface;
+
 
 public class UsaConta {
     public static void main(String[] args) {
-        Conta conta = new Conta();
-        Containterface c1 = new Containterface();
-
-        c1.menu(conta);
+        Banco banco = new Banco();
+        BancoInterface bi = new BancoInterface(banco);
+        bi.menu();
     }
 }
