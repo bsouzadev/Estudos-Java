@@ -8,7 +8,7 @@ public class CarroTest {
         Carro carro2 = new Carro("Mustang", 275);
         Carro carro3 = new Carro("Camaro azul", 290);
         
-        Carro.velocidadeLim = 200; //se acessa a variavél pela propia classe porque ela é static.
+        Carro.setVelocidadeLim(200); //se acessa a variavél pela propia classe porque ela é static.
 
         carro.imprime();
         carro2.imprime();
