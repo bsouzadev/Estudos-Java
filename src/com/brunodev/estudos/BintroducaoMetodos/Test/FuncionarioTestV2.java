@@ -10,5 +10,11 @@ public class FuncionarioTestV2 {
         fun.setSalario(new float[]{1621.29f, 1621.29f, 1621.29f});
 
         fun.imprimeDados();
+
+        System.out.println("==== Imprimindo na main ====");
+        
+        for(float i : fun.getSalario()){
+            System.out.println(i);
+        }
     }
 }

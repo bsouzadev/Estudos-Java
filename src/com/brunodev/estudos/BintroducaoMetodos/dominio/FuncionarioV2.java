@@ -2,13 +2,14 @@
 package com.brunodev.estudos.BintroducaoMetodos.dominio;
 
 public class FuncionarioV2 {
-    //nem todos os atributos da classe serão acessados, por exemplo media. Nesse caso não é nescessario fazer um set nela.
+    // nem todos os atributos da classe serão acessados, por exemplo media. Nesse
+    // caso não é nescessario fazer um set nela.
     private int idade;
     private String nome;
     private float salario[];
     private float media;
 
-    //metodos:
+    // metodos:
     public void imprimeDados() {
         System.out.println(this.nome);
         System.out.println(this.idade);
@@ -30,8 +31,10 @@ public class FuncionarioV2 {
 
     // metodos set:
     public void setIdade(int idade) {
-        if (idade >= 0)
+        if (idade >= 0) {
             this.idade = idade;
+            return;
+        }
 
         System.out.println("Idade invalida!");
     }
@@ -40,8 +43,8 @@ public class FuncionarioV2 {
         this.nome = nome;
     }
 
-    public void setSalario(float[] salario) {
-        this.salario = salario;
+    public void setSalario(float[] salario) { //é recebido um endereço de memoria para o array.
+        this.salario = salario; //atribuindo esse end de memoria.
     }
 
     // metodos get;
@@ -54,7 +57,7 @@ public class FuncionarioV2 {
     }
 
     public float[] getSalario() {
-        return salario;
+        return salario; //retorna o end de memoria.
     }
 
     public float getMedia() {
