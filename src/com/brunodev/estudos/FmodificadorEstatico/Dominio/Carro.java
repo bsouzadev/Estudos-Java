@@ -1,5 +1,6 @@
 package com.brunodev.estudos.FmodificadorEstatico.Dominio;
 
+//static = uma variável única compartilhada por todos os objetos da classe
 public class Carro {
     private String nome;
     private double velocidadeMax;
