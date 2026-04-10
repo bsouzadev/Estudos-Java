@@ -1,6 +1,6 @@
 package com.brunodev.estudos.FmodificadorEstatico.Dominio;
 
-//static = uma variável única compartilhada por todos os objetos da classe
+//static = indica que um membro (variável, método ou classe interna) pertence à classe em si, e não a instâncias (objetos) específicas.
 public class Carro {
     private String nome;
     private double velocidadeMax;

@@ -25,6 +25,7 @@ public class Anime {
         }
         */
 
+        System.out.println("No metodo ===");
         for (int ep : this.ep) {
             System.out.print(ep + " ");
         }
