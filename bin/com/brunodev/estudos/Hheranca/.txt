@@ -1,0 +1,5 @@
+- Herança é um mecanismo que permite a uma classe (subclasse/filha) adquirir atributos e métodos de outra classe (superclasse/pai), promovendo a reutilização de código e a organização hierárquica
+
+- Herença é um, associação tem um.
+
+- Herança tem um acoplamento (dependência entre classes ou componentes) alto.
