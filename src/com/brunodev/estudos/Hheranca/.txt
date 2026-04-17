@@ -1,5 +1,17 @@
-- Herança é um mecanismo que permite a uma classe (subclasse/filha) adquirir atributos e métodos de outra classe (superclasse/pai), promovendo a reutilização de código e a organização hierárquica
+- Herança é um mecanismo que permite a uma classe (subclasse/filha) adquirir atributos e métodos de outra classe (superclasse/pai), promovendo a reutilização de código e a organização hierárquica. Se usa herança quando se quer extender funcionalidades de uma classe e manter o relacionamento entre elas. 
 
-- Herença é um, associação tem um.
+- Herança é um, associação tem um.
 
 - Herança tem um acoplamento (dependência entre classes ou componentes) alto.
+
+— Ordem:
+- Bloco de inicialização estático da superclasse é executado quando a jvm carrega a classe pai
+- Bloco de inicialização estático da subclasse é executado quando a jvm carrega a classe filha
+- Alocado espaço em memória para o objeto da classe pai
+- Cada atributo de classe pai é criado e inicializado com os valores padrões ou o que for passado da classe pai
+- Bloco de inicialização da superclasse é executado na ordem em que aparece
+- O construtor da classe pai é executado
+- Alocado espaço em memória para o objeto da classe filha
+- Cada atributo de classe filha é criado e inicializado com os valores padrões ou o que for passado
+- Bloco de inicialização da classe filha é executado na ordem em que aparecem
+- O construtor da classe filha é executado
