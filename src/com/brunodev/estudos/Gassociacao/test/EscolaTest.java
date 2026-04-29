@@ -15,7 +15,7 @@ public class EscolaTest {
 
         escola.imprime();
 
-        //Somente para visualizar os endereços de memoria
+        //Somente para visualizar os endereços de memória
         System.out.println("End objeto prof " + prof);
         System.out.println("End array " + profes);
         System.out.println("End do array na posição 1 " + profes[0]);

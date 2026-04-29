@@ -1,13 +1,8 @@
 package com.brunodev.estudos.BintroducaoMetodos.dominio;
 
-//acoplamento = o quanto uma classe conhece/depende da outra.
-//Coesão = o quanto uma classe é focada em uma única responsabilidade (uma classe, uma responsabilidade).
-//alto acoplamento é ruim, baixo é bom. Alta coesão bom, baixa é ruim.
-//variaveis em metodos precisam ser inicializadas, as de classes (atributos) não.
-
 public class Pessoa {
 
-    //o modificador de acesso privado significa que os atributos da classe só vão ser acessador pela propia classe.
+    //o modificador de acesso privado significa que os atributos da classe só vão ser acessados pela propria classe.
     private String nome;
     private int idade;
 
@@ -16,8 +11,8 @@ public class Pessoa {
         System.out.println(this.idade);
     }
 
-    //para acessar os atributos privatos, damos um metodo para acessar esses atributos:
-    //metodo fica publico, e o atributo privado.
+    //para acessar os atributos privados, damos um método para acessar esses atributos:
+    //método fica publico, e o atributo privado.
     public void setNome(String nome){ //metodo set serve para alterar o valor de um atributo privado, permitindo validação e controle.
         this.nome = nome;
     }

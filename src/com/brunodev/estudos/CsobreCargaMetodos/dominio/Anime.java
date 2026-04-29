@@ -1,7 +1,5 @@
 package com.brunodev.estudos.CsobreCargaMetodos.dominio;
 
-//Sobrecarga de métodos: mesmo nome + parâmetros diferentes (tipo, quantidade ou ordem). O tipo de retorno/modificador de acesso não importa.
-//sobrecarga melhora a escala
 public class Anime {
     private String tipo;
     private int episodios;

@@ -1,8 +1,8 @@
 package com.brunodev.estudos.Dconstrutores.dominio;
 
 
-//sobrecarga construtores: é vários construtores na mesma classe, mas com parâmetros diferentes. Ou seja, se pode criar os objetos de formas diferentes.
-//sobrecarga melhora a escala
+//Sobrecarga construtores: é vários construtores na mesma classe, mas com parâmetros diferentes. Ou seja, se pode criar os objetos de formas diferentes.
+//Sobrecarga melhora a escala
 public class Anime {
     private String tipo;
     private int episodios;
@@ -12,9 +12,9 @@ public class Anime {
 
     // metodo construtor = é um método especial usado para criar e inicializar um objeto.
     // inicializa o objeto após sua criação com 'new', ou seja, inicializa o objeto pronto para o uso.
-    public Anime(String tipo, String nome, int episodios, String genero) { //cria um metodo construtor com os parametros selecionados.
+    public Anime(String tipo, String nome, int episodios, String genero) { //cria um método construtor com os parâmetros selecionados.
         //a chamada para outro construtor deverá ser feita na primeira linha.
-        //this(); //sintaxe para chamar outro construtor (só consegue chamar por esse sintexe dentro do construtor. Irá chamar o construtor vazio, porque não tem metodos no this e nem no construtuor vazio).
+        //this(); //sintaxe para chamar outro construtor (só consegue chamar por essa sintaxe dentro do construtor. Irá chamar o construtor vazio, porque não tem metodos no this e nem no construtor vazio).
         this.nome = nome;
         this.tipo = tipo;
         this.episodios = episodios;
@@ -22,7 +22,7 @@ public class Anime {
     }
 
     public Anime(String tipo, String nome, int episodios, String genero, String estudio){
-        this(tipo, nome, episodios, genero); //chama o construtor que tem esses 4 parametros.
+        this(tipo, nome, episodios, genero); //chama o construtor que tem esses 4 parâmetros.
         this.estudio = estudio;
     }
 
@@ -31,7 +31,7 @@ public class Anime {
         //this.nome = "Gullit".
         //o objeto ja iria nascer com esse atributo pre selecionado.
 
-        //ou simplesmente ter um metodo vazio Pulblic Anime(){ ... }.
+        //ou simplesmente ter um metodo vazio Public Anime(){ ... }.
     }
 
     public void imprime() {

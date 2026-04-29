@@ -14,10 +14,9 @@ public class Time {
     }
 
     public void imprime(){
-        System.out.println(this.nome);
         if(jogadores == null) return;
         for (int i = 0; i < this.jogadores.length; i++) {
-            System.out.println(this.jogadores[i].getNome());
+            System.out.println("Os jogadores de " + getNome() + ": " + this.jogadores[i].getNome());
         }
     }
 

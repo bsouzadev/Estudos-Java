@@ -1,0 +1,2 @@
+Sobrecarga de métodos: mesmo nome + parâmetros diferentes (tipo, quantidade ou ordem). O tipo de retorno/modificador de acesso não importa.
+Sobrecarga melhora a escala

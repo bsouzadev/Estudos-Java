@@ -1,0 +1,6 @@
+Acoplamento = o quanto uma classe conhece/depende da outra.
+Coesão = o quanto uma classe é focada numa única responsabilidade (uma classe, uma responsabilidade).
+Alto acoplamento é ruim, baixo é bom. Alta coesão bom, baixa é ruim.
+Variáveis em metodos precisam ser inicializadas, as de classes (atributos) não.
+
+This: Serve para fazer referência ao objeto atual e evitar ambiguidades entre atributos e variáveis locais.
