@@ -5,15 +5,6 @@ public class Endereco {
     private String cep;
 
     //
-
-    /*
-     * public Endereco(String rua, String cep){
-     * this.rua = rua;
-     * this.cep = cep;
-     * }
-     */
-
-    //
     public void setCep(String cep) {
         this.cep = cep;
     }

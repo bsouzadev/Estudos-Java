@@ -17,7 +17,6 @@ public class Pessoa {
         System.out.println("Dentro do bloco de inicialização de pessoa2");
     }
 
-
     //
     public Pessoa(String nome){
         this.nome = nome;
@@ -31,7 +30,7 @@ public class Pessoa {
     }
     //
     public void imprime() {
-        System.out.println(this.getCpf()); //o this irá fazer ref, para o metodo que chamou.
+        System.out.println(this.getCpf()); //o this irá fazer ref, para o objeto que chamou.
         System.out.println(this.getNome());
         System.out.println(this.getEndereco().getRua() + " " + this.getEndereco().getCep());
     }

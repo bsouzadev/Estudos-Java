@@ -10,7 +10,7 @@ public class SeminarioTest {
         LocalSeminario localSeminario = new LocalSeminario("Fenda do biquíni");
 
         AlunoSeminario alunoSeminario = new AlunoSeminario("Lula molusco" , 19);
-        AlunoSeminario alunoSeminario1 = new AlunoSeminario("Bob detergente", 33);
+        AlunoSeminario alunoSeminario1 = new AlunoSeminario("Bob Esponja", 33);
         AlunoSeminario alunoSeminario2 = new AlunoSeminario("Plankton", 23);
         AlunoSeminario alunoSeminario3 = new AlunoSeminario("Patrick", 31);
 
