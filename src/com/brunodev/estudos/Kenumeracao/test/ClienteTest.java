@@ -13,5 +13,13 @@ public class ClienteTest {
         System.out.println(cliente1);
         System.out.println(TipoPagamento.DEBITO.calculaDesconto(100));
         System.out.println(TipoPagamento.CREDITO.calculaDesconto(100));
+
+        //Atrvés do metodo que retorna pelo nome:
+        TipoCliente tipoCliente = TipoCliente.valueOf("PESSOA_FISICA"); //valueOf, retorna a enum através do nome (CONSTANTE). No caso irá me ratonar o enum PESSOA_FISICA.
+        System.out.println(tipoCliente.getValor()); //tipoCliente tem PESSOA_FISICA.
+
+        //Através do metodo criado que retorna pelo atributo:
+        TipoCliente tipoCliente1 = TipoCliente.tipoClientePorNomeRelatorio("Pessoa fisica");
+        System.out.println(tipoCliente1); //tipoCliente1 tem PESSOA_FISICA. Porem, ela foi procurada através de algum atributo, e não diretamente pelo nome da variavel (CONSTANTE).
     }
 }
