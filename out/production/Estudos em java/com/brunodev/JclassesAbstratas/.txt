@@ -1,1 +1,0 @@
-Uma classe abstrata é uma classe que não pode ser instanciada diretamente (não se pode criar objetos dela). Ela serve como um modelo base para subclasses (herança), permitindo definir métodos comuns e métodos abstratos (sem corpo) que as classes filhas são obrigadas a implementar

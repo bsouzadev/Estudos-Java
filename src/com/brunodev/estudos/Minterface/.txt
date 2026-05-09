@@ -1,0 +1,5 @@
+- Uma ‘interface’ é: como um contrato que define "o que" uma classe deve fazer (assinaturas de método), sem especificar "como" (implementação).
+- Se pode fazer a extensão de múltiplas ‘interfaces’, diferentes da herança.
+
+Diferença de classe abstrata e ‘interfaces’:
+classes abstratas permitem reutilização de código (com métodos concretos) e definem uma relação de "é-um", enquanto ‘interfaces’ definem um contrato de comportamento ("pode-fazer") que classes não relacionadas podem implementar
