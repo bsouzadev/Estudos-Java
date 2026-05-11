@@ -12,5 +12,10 @@ public class CalculadoraImposto {
         System.out.println("Produto: " + produto.getNome());
         System.out.println("Valor: " + produto.getValor());
         System.out.println("Imposto a ser pago: " + imposto);
+
+        if(produto instanceof Tomate){ //Se o objeto que produto faz referência é um tomate, acontece o cast e é impresso a validade do tomate.
+            Tomate tomate = (Tomate) produto;
+            System.out.println(tomate.getDataValidade());
+        }
     }
 }
