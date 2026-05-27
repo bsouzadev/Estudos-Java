@@ -13,8 +13,8 @@ public class Matrizes {
         }
 
         //
-        for (int i = 0; i < dias.length; i++) {
-            for (int k = 0; k < dias[i].length; k++) { // pega o "tamanho de cada ref do vetor apontado".
+        for (int i = 0; i < dias.length; i++) { //percorre as linhas
+            for (int k = 0; k < dias[i].length; k++) { // pega o "tamanho de cada ref do vetor apontado". Percorre as colunas.
                 System.out.println(dias[i][k]);
             }
             System.out.println();
