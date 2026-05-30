@@ -1,0 +1,5 @@
+Se tem dois tipos de exceções, checked e unchecked
+
+checked: são as exceções que são filhas de exception diretamente, e se elas não forem tratadas irão dar erro em tempo de compilação (código nem roda, e precisa de tratamento, se não o código nem compila).
+
+unchecked: são as exceções que são filhas (ou a propria classe) de runTimeException. São as exceções que quando são lançadas, e a culpa é do programador (o tratamento não é obrigatório).
