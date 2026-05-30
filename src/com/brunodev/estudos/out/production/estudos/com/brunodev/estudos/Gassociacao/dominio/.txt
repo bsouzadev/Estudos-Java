@@ -1,0 +1,2 @@
+- Associação é um relacionamento entre duas classes, onde um objeto de uma classe utiliza ou se refere a um objeto de outra classe para realizar operações
+

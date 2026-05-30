@@ -1,0 +1,4 @@
+- O que é Polimorfismo? Polimorfismo é quando uma referência do tipo pai pode apontar para objetos filhos, e cada objeto executa a sua própria versão de um método.
+Só ira funcionar se, na classe pai tiver o mesmo método que na classe filha.
+
+- Polimorfismo "só" é aplicado na herança.
