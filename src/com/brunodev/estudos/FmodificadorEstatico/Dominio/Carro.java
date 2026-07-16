@@ -40,7 +40,7 @@ public class Carro {
         // não a um objeto específico. Portanto, não é garantido que exista
         // uma instância para usar "this".
 
-        // Não se pode usar, dentro de métodos estáticos, variáveis não estáticas,
+        // Não se pode usar, dentro de métodos estáticos, variáveis não estáticas (atributos de classe),
         // pois, para o método estático acessar uma variável não estática,
         // seria necessário um objeto. E esse objeto pode ainda não ter sido criado.
 
