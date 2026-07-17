@@ -1,5 +1,22 @@
 Se tem dois tipos de exceções, checked e unchecked
 
 checked: são as exceções que são filhas de exception diretamente, e se elas não forem tratadas irão dar erro em tempo de compilação (código nem roda, e precisa de tratamento, se não o código nem compila).
+-> sou obrigado a tratar com try/catch ou propagar com throws.
 
 unchecked: são as exceções que são filhas (ou a propria classe) de runTimeException. São as exceções que quando são lançadas, a culpa é do programador (o tratamento não é obrigatório, se pode tratá-las com if e else).
+-> não sou obrigado a usar try/catch nem throws. Posso usar se fizer sentido, mas geralmente o ideal é prevenir a exceção com validações (if, else), corrigindo a lógica do programa.
+
+
+
+//
+Throwable
+├── Error
+└── Exception
+    ├── RuntimeException
+    │   ├── Exceções do tipo unchecked.
+    │
+    │
+    │
+    │
+    ├── Exceções do tipo checked.
+//
