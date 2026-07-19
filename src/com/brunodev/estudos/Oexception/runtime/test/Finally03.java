@@ -1,6 +1,6 @@
 package com.brunodev.estudos.Oexception.runtime.test;
 
-public class RunTimeExceptionTest03 {
+public class Finally03 {
     static void main(String[] args) {
         try{
             abreConexao2();
