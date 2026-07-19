@@ -21,7 +21,7 @@ public class MultiplasExcecoes04 {
 
         try {
             talvezLanceException();
-        } catch (Exception e) {
+        } catch (SQLException | FileNotFoundException e) { //Se pode usar essa abreviação quando as exceções não fazem parte da mesma linha de herança.
             System.out.println("Dentro de Exception");
         }
     }
