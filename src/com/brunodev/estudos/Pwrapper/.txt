@@ -1,0 +1,3 @@
+- Wrappers são classes que "embrulham" (envolvem) tipos de dados primitivos, transformando-os em objetos.
+- Permite passar os valores numéricos por referência e não mais por valor.
+- Estrutura de Dados em java não trabalha com tipos primitivos (Exemplo List, não é possível fazer uma de int e sim Integer).
