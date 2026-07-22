@@ -20,7 +20,7 @@ public class StringTest {
 
         // Retorna 'false' porque 'nomeDoBonitao' agora aponta para o novo endereço ("Bruno Souza"),
         // enquanto 'nomeDoBonitao2' continua apontando com segurança para o "Bruno" original.
-        System.out.println(nomeDoBonitao == nomeDoBonitao2);
+        System.out.println(nomeDoBonitao == nomeDoBonitao2); //equals comparar o conteúdo de dois objetos, == compara a referencia.
 
         // O 'new' força o Java a ignorar o Pool e criar um objeto "Bruno" totalmente novo na memória Heap.
         String nomeDoBonitao3 = new String("Bruno");
