@@ -1,4 +1,4 @@
-package com.brunodev.estudos.Rdates.test;
+package com.brunodev.estudos.Rdatas.test;
 
 import java.util.Date;
 
