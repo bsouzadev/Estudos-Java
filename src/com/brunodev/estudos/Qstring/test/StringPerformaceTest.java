@@ -39,3 +39,7 @@ public class StringPerformaceTest {
         }
     }
 }
+
+//A String tradicional é imutável (cria um novo objeto a cada alteração).
+// O StringBuilder e o StringBuffer são mutáveis e alteram o mesmo objeto na memória, mas o
+// StringBuffer é seguro para uso simultâneo (thread-safe)

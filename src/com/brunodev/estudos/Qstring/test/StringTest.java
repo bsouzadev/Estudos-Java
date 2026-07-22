@@ -35,5 +35,8 @@ public class StringTest {
 
         // Resumo definitivo: Strings são imutáveis na memória. Para "mudar" o valor visual de uma variável,
         // o Java cria um objeto novo e você precisa reatribuí-lo à variável de referência.
+
+        // Imutável = o conteúdo da String nunca muda.
+        // O que pode mudar é a variável de referência, que passa a apontar para outra String.
     }
 }
