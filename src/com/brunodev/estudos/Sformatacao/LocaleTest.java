@@ -1,10 +1,10 @@
-package com.brunodev.estudos.Rdatas.test;
+package com.brunodev.estudos.Sformatacao;
 
 import java.text.DateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
-public class LocalTest {
+public class LocaleTest {
     static void main(String[] args) {
         Locale localeItaly = new Locale("it","IT"); //Configura o padrão para o italiano da Italia.
         Locale localeCH = new Locale("it","CH"); //Configura o padrão para o italiano da suíça.
