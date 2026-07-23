@@ -3,7 +3,7 @@ package com.brunodev.estudos.Sformatacao;
 import java.text.NumberFormat;
 import java.util.Locale;
 
-public class NumberFormatTest {
+public class NumberFormatNumerosTest {
     static void main(String[] args) {
         Locale localePT = new Locale("pt", "BR");
         Locale localeJP = Locale.JAPAN;
