@@ -1,0 +1,83 @@
+Herança: é um mecanismo que permite a uma classe (subclasse/filha) adquirir atributos e métodos de outra classe (superclasse/pai). Usado para reaproveitar código, e organização.
+Uma subclasse pode ter atributos e métodos adicionais e sobrescrever métodos provenientes da superclasse.
+
+Java não aceita herança múltipla. herança simples ->  Uma subclasse pode estender uma única classe
+
+
+
+Todos os membros da superclasse são herdados pela subclasse, porém membros private/packge só podem ser acessados via membros públicos ou protegidos. Se o modificador de acesso for protected, é possível a classe filha acessar diretamente o atributo.
+
+
+
+Toda classe é filha de object.
+
+
+
+Sobrescrita de metodo: é reimplementar na subclasse um metodo existente na superclasse. O cabeçalho precisa ser o mesmo, e o corpo diferente!
+
+super.nomeDoMetodo chama um metodo da superclasse.e
+
+
+Funcionamento da herança: o compilador guarda as informações de uma classe dentro do ric -> \[variáveis, ponteiro para vtable da classe], dentro do vtable tem um ponteiro para os métodos das classes.
+
+
+
+Vinculação dinâmica de mensagem: É quando o Java decide qual metodo executar na hora que o programa está rodando, dependendo do objeto. Ocorre porque uma referência pode apontar para diferentes tipos de objetos (superclasses ou subclasses) (mas pode não depender de herança).
+
+Funcionamento: É usado o tipo real do objeto para localizar e executar o metodo correspondente em tempo de execução.
+
+
+
+Vinculação estática de mensagem: O metodo é decidido em tempo de compilação, antes de rodar já se sabe qual metodo vai executar, é mais rápido e não depende de objeto
+
+
+
+Herança de construtores: - Se a superclasse possui um construtor sem argumentos e a subclasse possui/ou não um construtor, a subclasse chama o construtor da superclasse automático.
+
+\- Se a superclasse possuir apenas um construtor com argumentos, a subclasse também deve ter um construtor e é obrigatório chamar o construtor da superclasse nele.
+
+\- O comando super(parametroDoConstrutor) chama o construtor da superclasse, deve ser sempre a primeira linha.
+
+
+
+Herança de Membros Estáticos: são herdados, mas não podem ser sobrescritos nas subclasses. Se tem na subclasse um metodo estático com o mesmo cabeçalho que na superclasse, não é sobrescrita, e sim substituição. Super não funciona para chamar metodos estáticos. Não tem Vinculação dinâmica de mensagem e sim a estática.
+
+
+
+Classe final: É uma classe a qual não pode ser estendida.
+
+Metodo final: É um metodo a qual não pode ser sobrescrito.
+
+
+
+Classe abstrata: Não pode ser instanciada e serve apenas como superclasse para outras classes.
+
+Metodo abstrato: É um metodo sem corpo. Utilizado quando uma superclasse precisa definir que um comportamento existente, mas a lógica específica desse comportamento só faz sentido ser definida nas subclasses. Uma classe que possui um metodo abstrato, tem que ser abstrata. Toda classe que estende uma classe com métodos abstratos devem sobrescrever esses métodos para essa classe não ser abstrata.
+
+
+
+Interface: Simula uma herança múltipla, definindo um contrato que as classes que a implementam são obrigadas a cumprir. Interface não é uma classe, não se usa a palavra class, somente public interface nome. E dentro dela tem métodos abstratos, e toda classe que implementar a interface tem que sobrescrever o metodo, ou será uma classe abstrata.
+
+Para implementar uma interface na classe se usa implements + nome da interface.
+Uma classe pode implementar diversas interfaces.
+
+O metodo em uma interface sempre será abstrato (não precisa colocar abstract).
+
+Pode ter métodos estáticos, e esses métodos precisam ter corpo, diferente dos abstratos.
+
+Default: cria métodos normais.
+
+Todo o atributo é public, static e final(constante). (não precisa de modificadores de acesso para indicar isso).
+
+
+
+Diferença entre classe abstrata e interface:
+
+classes abstratas define o que um objeto é e permitem compartilhar código (métodos concretos e atributos), e interfaces define o que um objeto faz focando em comportamento entre classes não relacionadas.
+
+
+
+\-------
+sobrescrito = mesmo cabeçalho e corpo diferente que outro metodo na superclasse.
+
+sobrecarga = mesmo nome + parâmetros diferentes (tipo, quantidade ou ordem) que outro metodo na mesma unidade de código.
