@@ -2,6 +2,8 @@ package com.brunodev.estudos.Rdatas.test;
 
 import java.time.LocalDate;
 import java.time.Period;
+import java.time.temporal.ChronoField;
+import java.time.temporal.ChronoUnit;
 
 public class PeriodTest {
     static void main(String[] args) {
@@ -20,5 +22,8 @@ public class PeriodTest {
         System.out.println(p3);
         System.out.println(p4);
         System.out.println(p5);
+
+        //Se quisermos saber a quantidade de meses que da 48 semanas teremos que fazer:
+        System.out.println(dataHoje.until(dataHoje.plusDays(p4.getDays()), ChronoUnit.MONTHS));
     }
 }
