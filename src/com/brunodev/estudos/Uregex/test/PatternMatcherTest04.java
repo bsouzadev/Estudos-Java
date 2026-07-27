@@ -22,6 +22,7 @@ public class PatternMatcherTest04 {
         // () = agrupamento.
         // | = ou
         // $ = representa o fim da linha.
+        // . 1.3 = retorna tudo que está entre 1 e 3, como: 123, 133, 1@3, 1A3.
 
         String regex = "0[xX]([0-9a-fA-F])+(\\s|$)"; //Procura por uma expressão especifica que começe com 0 e, x ou X e, (0-9 ou a-f ou A-F) uma ou mais vezes, e seguido de espaço em branco ou fim da linha.
         String texto = "12 0x 0X 0xFFABC 0x10G 0x1";
