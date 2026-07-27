@@ -1,0 +1,6 @@
+Todas as exceções e erro no java vem da superClasse Throwable
+Error e Exception são subclasses de Throwable.
+
+Um Erro é filho da classe Throwable, e não é uma exceção. Representa problemas graves da JVM ou do ambiente de execução. Geralmente não podem ser recuperados durante a execução do programa e, por isso, normalmente não são tratados pelo programador.
+
+Exceção é filha da classe Throwable. Representa situações anormais que podem ocorrer durante a execução do programa. Podem ser tratadas pelo programador (se não for o progama para de executar), permitindo que o programa continue executando ou lide com o problema de forma adequada.
