@@ -24,6 +24,8 @@ public class PatternMatcherTest05 {
         // | = ou
         // $ = representa o fim da linha.
         // . 1.3 = retorna tudo que está entre 1 e 3, como: 123, 133, 1@3, 1A3.
+        // ^ = representa negação para um conjunto de caracteres. Exemplo: [^abc] retorna tudo o que não for a ou b, ou c.
+        // Ele também serve para encontrar o que você quer no começo da linha. Exemplo: ^teste localiza a palavra "teste" somente se ela estiver no começo da frase, ignorando se aparecer no meio de outra linha.
 
         //Pequeno exercício: Encontrar todos os emails validos.
         String regex = "([a-z0-9A-Z])+@(gmail\\.com|hotmail\\.com)"; //Procura por uma expressão especifica que tenha ([a-z ou 0-9 ou A-Z]) uma ou mais de uma vezes, e @, e (gmail.com ou hotmail.com)
