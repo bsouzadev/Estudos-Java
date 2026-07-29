@@ -10,6 +10,10 @@ public class FileReaderTest {
         File file = new File("file.txt");
 
         try (FileReader fr = new FileReader(file)){
+//             char[] in = new char[1000];
+//             int size = fr.read(in); Quando se passa um array dentro do .read ele retorna o tamanho do arquivo (numero de caracteres).
+//            System.out.println("tam: " + size);
+
             //System.out.println(fr.read()); .read retorna um inteiro que representa o número da tabela ASCII do primeiro carácter.
 
             //Para ler um arq inteiro:
