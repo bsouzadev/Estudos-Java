@@ -23,7 +23,7 @@ public class PathTest02 {
         Path pastaDiretorios = Files.createDirectories(subPastasPath);
 
         //Para criar um arquivo:
-        Path filePath = Paths.get(subPastasPath.toString(), "file.txt"); //Cria um arq dentro de subsubpasta. O .toString() retorna o caminho em formato de string (pasta/subpasta/subsubpasta). E cria o arq file.txt dentro de subsubpasta.
+        Path filePath = Paths.get(subPastasPath.toString(), "file.txt"); //Cria um arq dentro de subsubpasta. O .toString() transforma o caminho em formato de string (pasta/subpasta/subsubpasta). E cria o arq file.txt dentro de subsubpasta.
 
         if (Files.notExists(filePath)){ //Verifica se o diretorio/arq existe.
 
@@ -33,7 +33,11 @@ public class PathTest02 {
 
         //Copiando e renomeando um arq:
         Path origem = filePath;
-        Path destino = Paths.get(filePath.getParent().toString(), "file_rename.txt");
-        Files.copy(origem, destino, StandardCopyOption.REPLACE_EXISTING);
+        Path destino = Paths.get(filePath.getParent().toString(), "file_rename.txt"); //O metodo .getParent() extrai o diretório pai do arquivo (ou seja, a pasta onde o arquivo original está guardado (pasta/subpasta/subsubpasta)). E faz um novo caminho aonde esse novo arq será criado: pasta/subpasta/subsubpasta/file_rename.txt
+        // Logo: origem = pasta/subpasta/subsubpasta/file.txt
+        // destino = pasta/subpasta/subsubpasta/file_rename.txt
+
+        Files.copy(origem, destino, StandardCopyOption.REPLACE_EXISTING); //Copie o arquivo que está em origem para destino.
+        //StandardCopyOption.REPLACE_EXISTING = Se já existir um arquivo chamado: file_rename.txt ele será substituído pela nova cópia.
     }
 }
