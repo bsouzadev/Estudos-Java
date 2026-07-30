@@ -3,7 +3,7 @@ package com.brunodev.estudos.Wnio.test;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class ResolveTest03 {
+public class ResolveTest {
     static void main(String[] args) {
         //O metodo .resolve() serve para juntar caminhos, ou seja, combinar uma pasta base com um subdiretório ou arquivo.
 
