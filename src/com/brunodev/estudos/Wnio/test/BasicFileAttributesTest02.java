@@ -39,7 +39,7 @@ public class BasicFileAttributesTest02 {
     }
 }
 
-// BasicFileAttributes, DosFileAttributes, PosixFileAttributes servem para ler dados ocultos (metadados) de arquivos no Java.
+// BasicFileAttributes, DosFileAttributes, PosixFileAttributes servem para ler metadados (dados sobre dados. É a informação que explica o que é um arquivo, sem ser o conteúdo dele em si.) e propriedades específicas de arquivos e diretórios diretamente do sistema de arquivos.
 
 // BasicFileAttributes: Funciona em qualquer sistema. Mostra o básico: tamanho, data de criação, modificação e se é uma pasta ou arquivo.
 // DosFileAttributes: Feito para Windows. Mostra se o arquivo é oculto, somente leitura, de sistema ou arquivo morto.
