@@ -1,61 +1,41 @@
-Um software em linguagem imperativa é organizado em funções, que manipulam dados. Um software implementado em OO é organizado em classes, que representa entidades do problema retratado. É um conjunto de objetos de diferentes classes que interagem entre si.
-
-
+Um software implementado em OO é organizado em classes, que representa entidades do problema retratado. É um conjunto de objetos de diferentes classes que interagem entre si.
 
 Classe: Classe é uma estrutura de código que representa uma entidade (objeto do mundo real) do mundo real, definindo seus atributos (características) e métodos (ações).
 
-
-
 Objeto: Objeto é uma instância de uma classe, ou seja, um elemento criado a partir dela.
-
-
 
 Atributos: Atributos são as características (dados) definidas na classe e que cada objeto possui.
 
-
-
 Método: Métodos são as ações ou comportamentos que um objeto pode realizar.
 
-
-
 Modificadores de acesso: Indicam se as demais classes do programa têm acesso aos membros de uma classe (private, public, package {acessível na mesma classe e pacote}, protected {acessível na própria classe, subclasses e mesmo pacote}).
-
-
 
 Get e Set: Por uma questão de segurança. Deixar o atributo privado e acessá-lo somente por meio de métodos garante que somente a classe dona do atributo tem acesso direto a ele.
 
 Ou seja, as outras classes tem que pedir para a classe dona do atributo alterar ou retornar o valor. Set = altera, Get = retorna.
 
 
-
 Construtor: É um método que é executado automaticamente quando o objeto é criado, servindo para inicializar seus atributos/executar tarefas e preparar o objeto para uso.
-
 
 
 Métodos/Atributos de instancia: Para executar é preciso ter um objeto da classe, pois os membros pertencem ao objeto.
 
 
-
 Métodos/Atributos estático: Para executar não é preciso ter um objeto da classe, pois os membros não pertencem ao objeto e sim a classe, eles só podem acessar diretamente métodos e atributos de classe. \[**atributos** static, todos os objetos compartilham do mesmo valor e a alocação é feita apenas uma única vez para a classe].
-
 
 
 Associação → quando uma classe tem outra como atributo
 
 
-
 Dependência → quando uma classe usa outra (parâmetro, método, etc.)
-
 
 
 Sobrecarga de métodos: mesmo nome + parâmetros diferentes (tipo, quantidade ou ordem) e estão no mesmo lugar. O tipo de retorno/modificador de acesso não importa.
 
 
-
 Sobrecarga construtores: é vários construtores na mesma classe, mas com parâmetros diferentes. Ou seja, se pode criar os objetos de formas diferentes.
 
 This: Serve para fazer referência ao objeto atual e evitar ambiguidades entre atributos e variáveis locais.
-
 
 
 Tostring: retorna um texto que representa o objeto atual.
