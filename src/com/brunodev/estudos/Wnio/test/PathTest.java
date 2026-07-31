@@ -5,7 +5,7 @@ import java.nio.file.Paths;
 
 public class PathTest {
     static void main(String[] args) {
-        //Path, Paths, Files viram para substituir a antiga classe File. E elas trabalham juntas (Path, Paths, Files).
+        //Path, Paths, Files vieram para substituir a antiga classe File. E elas trabalham juntas (Path, Paths, Files).
 
 
         //Formas de pegar um arquivo:
