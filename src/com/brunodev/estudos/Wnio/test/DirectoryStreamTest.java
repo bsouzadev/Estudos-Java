@@ -9,7 +9,7 @@ import java.nio.file.Paths;
 public class DirectoryStreamTest {
     static void main(String[] args) {
         //Serve para listar os arquivos e pastas de um diretório de forma eficiente, usando pouca memória e permitindo o uso do laço for-each.
-        Path dir = Paths.get(".");
+        Path dir = Paths.get("."); //. Significa que estamos passando o caminho do nosso diretório atual.
 
         try(DirectoryStream<Path> stream = Files.newDirectoryStream(dir)){
             for(Path path : stream){
