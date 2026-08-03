@@ -1,6 +1,7 @@
 package com.brunodev.estudos.Xserializacao.test;
 
 import com.brunodev.estudos.Xserializacao.dominio.Aluno;
+import com.brunodev.estudos.Xserializacao.dominio.Turma;
 
 import java.io.*;
 import java.nio.file.Files;
@@ -13,8 +14,10 @@ public class SerializationTest {
     static void main(String[] args) {
         //Digamos que queremos salvar o estado desse objeto num arquivo e depois ler:
         Aluno aluno = new Aluno(1L, "Bruno Augusto", "1234");
+        Turma turma = new Turma("terceirao");
+        aluno.setTurma(turma);
 
-        //serializar(aluno);
+        serializar(aluno);
         deserializar();
 
     }
