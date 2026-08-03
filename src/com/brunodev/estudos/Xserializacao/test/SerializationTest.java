@@ -54,3 +54,9 @@ public class SerializationTest {
 
 //Um dos usos interessantes sobre serialização:
 //Persistência de dados: Gravar o estado atual de um objeto em arquivos binários para reutilizá-lo depois que o programa for fechado e aberto novamente.
+
+//Importante:
+
+//Na Serialização: O Java congela o estado atual do objeto (todas as suas variáveis com os valores daquele exato momento) e joga para o arquivo.
+//Na Desserialização: O Java apenas descongela essa foto. O objeto volta para a memória com as informações idênticas e do mesmo jeito que estavam quando você o salvou.
+//É por isso que ele pula o construtor: o construtor serve para criar um objeto novo (do zero), e o que você está fazendo na desserialização é apenas reviver um objeto velho que já existia.
