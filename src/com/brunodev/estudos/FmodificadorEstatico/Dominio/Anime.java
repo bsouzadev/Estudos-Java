@@ -45,8 +45,8 @@ public class Anime {
 
     //ordem de quando se cria um objeto:
     
-    //0 bloco de inicialização é executado quando a jvm carregar a classe
-    //1 é alocado um espaço na memoria.
+    //0 bloco de inicialização estático é executado quando a jvm carregar a classe
+    //1 é alocado um espaço na memória.
     //2 cada atributo da classe é criado e inicializado com valores de inicialização padrão, ou o que for passado.
     //3 bloco de inicialização é executado.
     //4 construtores.
